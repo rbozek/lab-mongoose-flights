@@ -6,6 +6,7 @@
 3. Create a `Flight` Model with the following properties (in lab planner)
 
 NEXT PUSH
--install npm, install mongoose, touch env, set up connection to personal database, install dotenv, import config.js to server
+
 
 stopped at: # Configure Mongoose in a Module
+-slack engineering - why is my .gitignore file being uploaded?
