@@ -1,3 +1,6 @@
+//to ensure app can use ENV file (after installing dotenv)
+import "dotenv/config.js"
+
 // import npm packages
 import express from 'express'
 import path from 'path'
