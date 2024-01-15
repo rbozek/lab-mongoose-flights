@@ -24,13 +24,9 @@ const flightSchema = new Schema({
   departs: {
     type: Date,
     default: function() {
-      // return (new Date().getFullYear() + 1)
-      // console.log((new Date().getFullYear() + 1));
-      const oneYearFromNow = new Date();
-      oneYearFromNow.setFullYear(oneYearFromNow.getFullYear() + 1);
-      // must return Date object, not just value
-      console.log(oneYearFromNow + 'test One Year From now!');
-      return oneYearFromNow;
+      const currentDate = new Date();
+      currentDate.setFullYear(currentDate.getFullYear() + 1);
+      return currentDate;
     },
     min: 2001,
     required: true,

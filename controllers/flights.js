@@ -21,10 +21,10 @@ function newFlight(req, res) {
 }
 
 function create(req, res) {
-  // remove empty properties to allow defualt values to populate in form - not working!
-	for (let key in req.body) {
-    if (req.body[key] === '') delete req.body[key]
-	}
+  // remove empty properties to allow defualt values to populate in form - tried as part of 'departs' default display fix, didnt work?
+	// for (let key in req.body) {
+  //   if (req.body[key] === '') delete req.body[key]
+	// }
   Flight.create(req.body)
   .then(flight => {
     res.redirect('/flights')
@@ -35,8 +35,20 @@ function create(req, res) {
   })
 }
 
+function deleteFlight(req, res) {
+  Flight.findByIdAndDelete(req.params.flightId)
+  .then(flight => {
+    res.redirect("/flights")
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/flights")
+  })
+}
+
 export {
   index,
   newFlight as new,
-  create
+  create,
+  deleteFlight as delete,
 }

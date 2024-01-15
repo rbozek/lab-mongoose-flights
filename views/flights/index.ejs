@@ -11,6 +11,8 @@
         <th>Airport</th>
         <th>Flight No.</th>
         <th>Departure date/time</th>
+        <th>del?</th>
+        <th>Flight ID (temp for test)</th>
       </tr>
     </thead>
     <tbody>
@@ -20,6 +22,15 @@
         <td><%= flight.airport %></td>
         <td><%= flight.flightNo %></td>
         <td><%= flight.departs %></td>
+        <td>
+          <form 
+            action="/flights/<%= flight._id %>?_method=DELETE" 
+            method="POST"
+          >
+            <button type="submit">X</button>
+          </form>
+        </td>
+        <td><%= flight._id %></td>
       </tr>
       <% }) %>
     </tbody>

@@ -1,20 +1,22 @@
 
 
 4. Implement the following User Stories:
-
-    - AAU, I want to be able to delete a flight from the list on the `index` view.
-    1. 5 step - add delete button to view    2. functionality for delete button
+ 
 
     - AAU, I want to be able to click on a flight to view its details on a `show` view.
     - AAU, I want to be able to click a button WITHIN the `show` view that brings me to an `edit` view where I can adjust a flight’s details.  When I save these changes, they should persist to the database and redirect me back to the flight’s `show` view.
-  -ME - eventually replace favicon!  
+
+
+TO DO from Part 1 - REPLACE FAVICON 
+  - DEFAULT VALUE FOR "departs" NOT WORKING https://ga-students.slack.com/archives/C068S0D7AKC/p1705360897384229
 
 
 NEXT PUSH
-
+-delete flight: determine route DELETE & /flights/:flightId, create UI for delete button, install npm method-override, import to server, mount with middleware, define route on server & map to exp controller fxn, add & code controller fxn, test!
 
 QUESTIONS
 -multiple css docs, i renamed "style" to "main"? missing CSS doc?
 -during Define a Basic Schema for a Movie Model - required:true or no? didnt specify
   -not sure how to test when setting these up?
 -slack engineering - why is my .gitignore file being uploaded? (had to set it to IGNORE)
+
