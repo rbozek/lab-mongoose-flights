@@ -1,0 +1,11 @@
+-e-gen replacement (from express routers) setup, removed .git, .git init empty directory, craeted repository, set as origin for mine, initial commit
+
+
+2. Create a **`config/database.js`** module that connects to a database named `flights`. Be sure to import the module in **`server.js`**.
+3. Create a `Flight` Model with the following properties (in lab planner)
+
+NEXT PUSH
+-create config directory & database.js, add event listeners to mongoose connection (database.js & server)
+
+stopped at: # Configure Mongoose in a Module
+-slack engineering - why is my .gitignore file being uploaded?
