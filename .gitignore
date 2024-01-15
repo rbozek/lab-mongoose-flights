@@ -1,7 +1,8 @@
 BIG LIST: 3. Create a `Flight` Model with the following properties (in lab planner)  -DONE (but did not IMPORT anywhere yet - controller)
 
 4. Implement the following User Stories:
-    - AAU, I want to view a list of all flights (index view) that displays each flight’s airline, airport, flight no., and departure date/time.
+    - AAU, I want to view a list of all flights (index view) that displays each flight’s airline, airport, flight no., and departure date/time. - DONE (but no data yet)
+    -replace favicon
     - AAU, I want to create a flight by entering the information on a `new` view that has a form. When I submit the form I should be taken back to all the flights.
     - AAU, I want to be able to access each view via a navigation bar at the top of the page with links to:
         - `ALL FLIGHTS`, and
@@ -13,7 +14,7 @@ BIG LIST: 3. Create a `Flight` Model with the following properties (in lab plann
 
 
 NEXT PUSH
-create flights views (directory & index.ejs), create flights router
+create controllers directory & file, move router functionality into controllers - edit server, flights route, flights controller
 
 QUESTIONS
 -multiple css docs, i renamed "style" to "main"? missing CSS doc?

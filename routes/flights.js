@@ -1,10 +1,18 @@
 import { Router } from 'express'
+import * as flightsCtrl from '../controllers/flights.js'
 
 const router = Router()
 
-// GET localhost:3000/flights
-router.get('/', function(req, res) {
-  res.render('index', { title: 'Flights index page, hopefully' })
-})
+// INITIAL CODE PRE-CONTROLLER localhost:3000/flights
+// router.get('/', function(req, res) {
+//   res.render('index', { title: 'Flights index page, hopefully' })
+// })
 
-export { router }
+// GET http://localhost:3000/movies
+router.get('/', flightsCtrl.index)
+
+export {
+  router
+}
+
+
