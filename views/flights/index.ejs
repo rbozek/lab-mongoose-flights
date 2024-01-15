@@ -1,0 +1,29 @@
+<%- include('../partials/html-head') %>
+<!-- <link rel="stylesheet" href="/stylesheets/movies/index.css" /> -->
+<%- include('../partials/nav') %>
+
+<main>
+  <h1>Flight List</h1>
+  <table id="list">
+    <thead>
+      <tr>
+        <th>Airline</th>
+        <th>Airport</th>
+        <th>Flight No.</th>
+        <th>Departure date/time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% flights.forEach((flight) => { %>
+      <tr>
+        <td><%= flight.title %></td>
+        <td><%= flight.releaseYear %></td>
+        <td><%= flight.flightNo %></td>
+        <td><%= flight.departs %></td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</main>
+
+<%- include('../partials/footer') %>
