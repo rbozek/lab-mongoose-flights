@@ -21,6 +21,10 @@ function newFlight(req, res) {
 }
 
 function create(req, res) {
+  // remove empty properties to allow defualt values to populate in form - not working!
+	for (let key in req.body) {
+    if (req.body[key] === '') delete req.body[key]
+	}
   Flight.create(req.body)
   .then(flight => {
     res.redirect('/flights')

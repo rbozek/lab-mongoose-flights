@@ -29,6 +29,7 @@ const flightSchema = new Schema({
       const oneYearFromNow = new Date();
       oneYearFromNow.setFullYear(oneYearFromNow.getFullYear() + 1);
       // must return Date object, not just value
+      console.log(oneYearFromNow + 'test One Year From now!');
       return oneYearFromNow;
     },
     min: 2001,

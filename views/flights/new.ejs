@@ -18,18 +18,25 @@
       <select name="airport" id="airport-select">
         <option value="AUS">AUS</option>
         <option value="DFW">DFW</option>
-        <option value="DEN">DEN</option>
+        <option value="DEN" selected>DEN</option>
         <option value="LAX">LAX</option>
         <option value="SAN">SAN</option>
       </select>
     <br>
 
     <label for="flight-no-input">Flight No.:</label>
-    <input type="text" name="flightNo" id="flight-no-input">
+    <input type="text" name="flightNo" id="flight-no-input" value="Must be between 10 & 9999">
     <br>
 
     <label for="depart-input">Departs:</label>
-    <input type="text" name="departs" id="depart-input">
+    <input
+      type="datetime-local"
+      id="depart-input"
+      name="departs"
+      value=""
+      min="2024-01-15T00:00"
+      max="2099-01-01T00:00"
+    />
     <br>
 
     <button type="submit">Add Flight</button>
