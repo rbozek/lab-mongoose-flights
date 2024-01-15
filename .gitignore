@@ -1,10 +1,11 @@
 BIG LIST: 3. Create a `Flight` Model with the following properties (in lab planner)  -DONE (but did not IMPORT anywhere yet - controller)
 
 4. Implement the following User Stories:
-    - AAU, I want to view a list of all flights (index view) that displays each flight’s airline, airport, flight no., and departure date/time. - DONE (but no data yet)
 
     - AAU, I want to create a flight by entering the information on a `new` view that has a form. When I submit the form I should be taken back to all the flights.
       1. first request displays form for user, 2. 2nd request to submit form to server, where data is created, - 5 STEPS FOR EACH!
+
+      -DONE - FIX DEFAULT VALUES!!?!
 
     - AAU, I want to be able to access each view via a navigation bar at the top of the page with links to:
         - `ALL FLIGHTS`, and
@@ -17,7 +18,8 @@ BIG LIST: 3. Create a `Flight` Model with the following properties (in lab plann
 
 
 NEXT PUSH
-5-steps for displaying 'new flights' page to user - ID route (GET, /movies/new), UI already there, add router, add controller & set up & export, test
+5-steps for 'new flight' Form Submission - 1 POST & redirect to /movies index ejs, 2 add UI/form in new.ejs, 3 define route in router, 4 add controller & export, 5 fill in controller for CRUD action - 'default values' in form still not working correctly
+  -NOTE default "den" not working
 
 QUESTIONS
 -multiple css docs, i renamed "style" to "main"? missing CSS doc?

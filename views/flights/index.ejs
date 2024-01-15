@@ -14,18 +14,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td> testing td's </td>
-        <td> testing td's </td>
-        <td> testing td's </td>
-        <td> testing td's </td>
-      </tr>
       <% flights.forEach((flight) => { %>
       <tr>
-        <td><%= flight.title %> testing </td>
-        <td><%= flight.releaseYear %> testing </td>
-        <td><%= flight.flightNo %> testing </td>
-        <td><%= flight.departs %> testing </td>
+        <td><%= flight.airline %></td>
+        <td><%= flight.airport %></td>
+        <td><%= flight.flightNo %></td>
+        <td><%= flight.departs %></td>
       </tr>
       <% }) %>
     </tbody>

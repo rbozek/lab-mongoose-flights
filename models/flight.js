@@ -7,19 +7,19 @@ const flightSchema = new Schema({
   airline: {
     type: String,
     enum: ['American', 'Southwest', 'United'],
-    // required: true
+    required: true,
   },  
   airport: {
     type: String,
-    default: 'DEN',
+    default: 'DEN', // should set as default value but doesn't work?
     enum: ['AUS', 'DFW', 'DEN', 'LAX', 'SAN'],
-    // required: true
+    required: true,
   },
   flightNo: {
     type: Number,
     required: true,
     min: 11,
-    max: 9998
+    max: 9998,
   },
   departs: {
     type: Date,
@@ -31,6 +31,8 @@ const flightSchema = new Schema({
       // must return Date object, not just value
       return oneYearFromNow;
     },
+    min: 2001,
+    required: true,
   },
 },{ 
   timestamps: true
