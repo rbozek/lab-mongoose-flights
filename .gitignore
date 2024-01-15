@@ -12,9 +12,10 @@ BIG LIST: 3. Create a `Flight` Model with the following properties (in lab plann
 
 
 NEXT PUSH
-create & set up partials (directory, & head/nav/footer ejs, rename stylesheet MAIN), update index router
+-updated main stylesheet with mongoose movies style, created style.css for safety
 
 QUESTIONS
+-multiple css docs, i renamed "style" to "main"? missing CSS doc?
 -during Define a Basic Schema for a Movie Model - required:true or no? didnt specify
   -not sure how to test when setting these up?
 -slack engineering - why is my .gitignore file being uploaded? (had to set it to IGNORE)
