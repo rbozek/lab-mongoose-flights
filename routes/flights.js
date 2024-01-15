@@ -8,8 +8,10 @@ const router = Router()
 //   res.render('index', { title: 'Flights index page, hopefully' })
 // })
 
-// GET http://localhost:3000/movies
+// GET http://localhost:3000/flights
 router.get('/', flightsCtrl.index)
+// GET http://localhost:3000/flights/new
+router.get('/new', flightsCtrl.new)
 
 export {
   router

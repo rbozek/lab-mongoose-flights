@@ -2,8 +2,10 @@ BIG LIST: 3. Create a `Flight` Model with the following properties (in lab plann
 
 4. Implement the following User Stories:
     - AAU, I want to view a list of all flights (index view) that displays each flight’s airline, airport, flight no., and departure date/time. - DONE (but no data yet)
-    -replace favicon
+
     - AAU, I want to create a flight by entering the information on a `new` view that has a form. When I submit the form I should be taken back to all the flights.
+      1. first request displays form for user, 2. 2nd request to submit form to server, where data is created, - 5 STEPS FOR EACH!
+
     - AAU, I want to be able to access each view via a navigation bar at the top of the page with links to:
         - `ALL FLIGHTS`, and
         - `ADD FLIGHT`  
@@ -11,10 +13,11 @@ BIG LIST: 3. Create a `Flight` Model with the following properties (in lab plann
     - AAU, I want to be able to delete a flight from the list on the `index` view.
     - AAU, I want to be able to click on a flight to view its details on a `show` view.
     - AAU, I want to be able to click a button WITHIN the `show` view that brings me to an `edit` view where I can adjust a flight’s details.  When I save these changes, they should persist to the database and redirect me back to the flight’s `show` view.
+  -ME - eventually replace favicon!  remove 'users' stuff if not needed.
 
 
 NEXT PUSH
-create controllers directory & file, move router functionality into controllers - edit server, flights route, flights controller
+5-steps for displaying 'new flights' page to user - ID route (GET, /movies/new), UI already there, add router, add controller & set up & export, test
 
 QUESTIONS
 -multiple css docs, i renamed "style" to "main"? missing CSS doc?
