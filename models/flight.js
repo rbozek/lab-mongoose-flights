@@ -3,6 +3,14 @@ import mongoose from 'mongoose'
 // optional shortcut to the mongoose.Schema class
 const Schema = mongoose.Schema
 
+const ticketSchema = new Schema({
+  // 'regular expression' being assigned to match validator (more info in Lab Part 2 page)
+  seat: {type: String, match: /[A-F][1-9]\d?/},
+  price: {type: Number, min: 0}
+},{
+  timestamps:true
+})
+
 const flightSchema = new Schema({
   airline: {
     type: String,
@@ -31,6 +39,7 @@ const flightSchema = new Schema({
     min: 2001,
     required: true,
   },
+  tickets: [ticketSchema],
 },{ 
   timestamps: true
 })
