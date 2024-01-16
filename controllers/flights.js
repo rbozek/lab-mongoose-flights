@@ -74,11 +74,28 @@ function edit(req, res) {
   })
 }
 
+function update(req, res) {
+  console.log("editing/updating a flight!")
+  // below couple lines prob not necessary - for removing empty properties
+  for (let key in req.body) {
+    if(req.body[key] === "") delete req.body[key]
+  }
+  Flight.findByIdAndUpdate(req.params.flightId, req.body, {new: true})
+  .then(flight => {
+    res.redirect(`/flights/${flight._id}`)
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/")
+  })
+}
+
 export {
   index,
   newFlight as new,
   create,
   deleteFlight as delete,
   show,
-  edit
+  edit,
+  update
 }

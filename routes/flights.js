@@ -20,6 +20,8 @@ router.delete('/:flightId', flightsCtrl.delete)
 router.get('/:flightId', flightsCtrl.show)
 // SHOW EDIT VIEW http://localhost:3000/flights/:flightId/edit
 router.get("/:flightId/edit", flightsCtrl.edit)
+// UPDATE (from edit view) http://localhost:3000/flights/:flightId
+router.put("/:flightId", flightsCtrl.update)
 
 export {
   router

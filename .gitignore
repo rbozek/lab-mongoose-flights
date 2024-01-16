@@ -1,18 +1,14 @@
 
-
-4. Implement the following User Stories:
-  
-    - AAU, I want to be able to click a button WITHIN the `show` view that brings me to an `edit` view where I can adjust a flight’s details.  When I save these changes, they should persist to the database and redirect me back to the flight’s `show` view.
-    1. 
-
-
 TO FIX/FINISH from Part 1 - REPLACE FAVICON 
   - DEFAULT VALUE FOR "departs" NOT WORKING https://ga-students.slack.com/archives/C068S0D7AKC/p1705360897384229
 BONUSES PART 1 - (bottom of page) 1. default departure date in "new flight" form / 2. list of flights in ascending order by dep. date, & red text if flight date has passed / 3. style index & new views
 
 
+
+
 NEXT PUSH
-create view to edit flight: determine route, create UI for edit movie button, create & map routes, create & code controller, create edit.ejs view, test!
+submit form for updating flight - conceptualize route, create UI(already done), define route & map to exported controller, create & export controller, code controller, test!
+
 
 QUESTIONS
 -multiple css docs, i renamed "style" to "main"? missing CSS doc?
