@@ -1,18 +1,17 @@
 
 
 4. Implement the following User Stories:
- 
-
-    - AAU, I want to be able to click on a flight to view its details on a `show` view.
+  
     - AAU, I want to be able to click a button WITHIN the `show` view that brings me to an `edit` view where I can adjust a flight’s details.  When I save these changes, they should persist to the database and redirect me back to the flight’s `show` view.
 
 
-TO DO from Part 1 - REPLACE FAVICON 
+TO FIX/FINISH from Part 1 - REPLACE FAVICON 
   - DEFAULT VALUE FOR "departs" NOT WORKING https://ga-students.slack.com/archives/C068S0D7AKC/p1705360897384229
+BONUSES PART 1 - (bottom of page) 1. default departure date in "new flight" form / 2. list of flights in ascending order by dep. date, & red text if flight date has passed / 3. style index & new views
 
 
 NEXT PUSH
--delete flight: determine route DELETE & /flights/:flightId, create UI for delete button, install npm method-override, import to server, mount with middleware, define route on server & map to exp controller fxn, add & code controller fxn, test!
+configure flight details view for user story - determine route, add UI, define route & map to controller, add view, render page, test
 
 QUESTIONS
 -multiple css docs, i renamed "style" to "main"? missing CSS doc?
