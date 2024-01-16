@@ -16,8 +16,10 @@ router.get('/new', flightsCtrl.new)
 router.post('/', flightsCtrl.create)
 // DELETE http://localhost:3000/flights/:movieId
 router.delete('/:flightId', flightsCtrl.delete)
-// DETAILS http://localhost:3000/flights/:flightId
+// DETAILS/show http://localhost:3000/flights/:flightId
 router.get('/:flightId', flightsCtrl.show)
+// SHOW EDIT VIEW http://localhost:3000/flights/:flightId/edit
+router.get("/:flightId/edit", flightsCtrl.edit)
 
 export {
   router
