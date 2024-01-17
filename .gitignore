@@ -9,13 +9,19 @@ PART 2 STUFF
 AAU, when viewing the list of flights, I want to click on a “detail” link displayed next to each flight to view all of the properties for that flight (show view). This show page should include each of its tickets.
   1st half - GET / flights/:flightId ??/tickets/:ticketId?? > UI add detail button > route on server > controller > GET res.render > write show view page
 
-NEXT PUSH
-AAU see details for each flight...ID route is GET /flights,flightId, UI (details button already created), edit existing show.ejs to show ticket values (will not show anything, no tickets created yet!)
-  -
 
+
+  -
 
 4. Implement the following User Story:
 AAU, when viewing the details page (show view) for a flight, I want to be able to add a ticket for that flight. Each ticket, as defined by the schema above, includes a seat and a price.
+
+**NEXT PUSH
+git commit -m "User Story to add ticket to flight... Define route /flights/.flightId/tickets. create UI inside flights/show view. define route on server, map to empty controller action. code & export controller. update show view to show new tickets!
+
+git commit -m 'User Story to add ticket to flight... Define route. create UI inside flights/show view. define route on server, map to empty controller action. code & export controller. update show view to show new tickets!'
+
+
 
 5. Implement the following User Story:
 AAU, when viewing the details page (show view) for a flight, I want to see a list of that flight’s tickets (seat & price)

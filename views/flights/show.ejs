@@ -18,13 +18,33 @@
     
     <ul>
       <% flight.tickets.forEach(ticket => { %>
+        <li>Entered at: <%= ticket.createdAt.toLocaleDateString() %></li>
         <li>Price: <%= ticket.price %></li>
         <li>Seat: <%= ticket.seat %></li> 
       <% }) %>
     </ul>
     
-    <div>seat: <%= flight.tickets.seat %></div>
-    <div>price: <%= flight.tickets.price %></div>
+
+  </section>
+
+  <section>
+    <% // from Part 2 of Lab %>
+    <h2>Add Ticket to Flight</h2>
+    <form 
+      id="add-ticket-form"
+      action="/flights/<%= flight._id %>/tickets"
+      method="POST"
+    >
+      <label for="content-textarea">Seat:</label>
+      <textarea name="seat" id="content-textarea">input seat</textarea>
+      <br>
+
+      <label for="content-textarea">Price:</label>
+      <textarea name="price" id="content-textarea">input price</textarea>
+      <br>
+
+      <button type="submit">Add Ticket</button>
+    </form>
 
 
     <div>
