@@ -14,6 +14,19 @@
     <div>Departs: </div>
     <div><%= flight.departs %></div>
     
+    <div>Tickets: </div>
+    
+    <ul>
+      <% flight.tickets.forEach(ticket => { %>
+        <li>Price: <%= ticket.price %></li>
+        <li>Seat: <%= ticket.seat %></li> 
+      <% }) %>
+    </ul>
+    
+    <div>seat: <%= flight.tickets.seat %></div>
+    <div>price: <%= flight.tickets.price %></div>
+
+
     <div>
     <a href="/flights/<%= flight._id %>/edit">
       <button>Edit Flight</button>
