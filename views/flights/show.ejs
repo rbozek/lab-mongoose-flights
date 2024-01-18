@@ -14,22 +14,31 @@
     <div>Departs: </div>
     <div><%= flight.departs %></div>
     
+
     <div>Tickets: </div>
-    
     <ul>
       <% flight.tickets.forEach(ticket => { %>
-        <li>Entered at: <%= ticket.createdAt.toLocaleDateString() %></li>
-        <li>Price: <%= ticket.price %></li>
         <li>Seat: <%= ticket.seat %></li> 
+        <li>Price: <%= ticket.price %></li>
+        <li>Entered at: <%= ticket.createdAt.toLocaleDateString() %></li>
       <% }) %>
     </ul>
-    
-
   </section>
 
   <section>
-    <% // from Part 2 of Lab %>
-    <h2>Add Ticket to Flight</h2>
+    <h3>Add Meal to Flight</h3>
+
+    <form id="add-meal-to-flight" action="/flights/<%= flight._id %>/meals" method="POST">
+      <select name="mealId">
+        <% meals.forEach(meal => { %>
+          <option value="<%= meal._id %>"><%= meal.name %></option>
+        <% }) %>
+      </select>
+      <button type="submit">Add Meal</button>
+    </form>
+
+
+    <h3>Add Ticket to Flight</h3>
     <form 
       id="add-ticket-form"
       action="/flights/<%= flight._id %>/tickets"

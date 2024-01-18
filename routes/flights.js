@@ -22,8 +22,10 @@ router.get('/:flightId', flightsCtrl.show)
 router.get("/:flightId/edit", flightsCtrl.edit)
 // UPDATE (from edit view) http://localhost:3000/flights/:flightId
 router.put("/:flightId", flightsCtrl.update)
-// CREATE TICKET (from edit view) http://localhost:3000/flights/:flightId/tickets
+// CREATE TICKET (from flight detail view) http://localhost:3000/flights/:flightId/tickets
 router.post("/:flightId/tickets", flightsCtrl.createTicket)
+// add meal (from flight detail view) http://localhost:3000/flights/:flightId/meals
+router.post("/:flightId/meals", flightsCtrl.addMeal)
 
 
 
