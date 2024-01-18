@@ -14,6 +14,19 @@ function newMeal(req, res) {
   })
 }
 
+function createMeal(req, res){
+  // console.log('createMeal button works!');
+  Meal.create(req.body)
+  .then(meal => {
+    res.redirect('/meals/new')
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/meals/new')
+  })
+}
+
 export {
-  newMeal
+  newMeal,
+  createMeal
 }
