@@ -73,8 +73,11 @@ function show(req, res) {
 function edit(req, res) {
   Flight.findById(req.params.flightId)
   .then(flight => {
+    // to send value of default date to access in views!
+    const flightDefaultDate = flight.departs.toISOString().slice(0,16)
     res.render("flights/edit", {
       flight, // same as: flight: flight
+      flightDefaultDate: flightDefaultDate,
       title: "Edit Flight"
     })
   })
